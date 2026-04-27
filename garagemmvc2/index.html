@@ -25,20 +25,51 @@
         <button class="menu-item" data-section="vagas">Vagas</button>
         <button class="menu-item" data-section="movitentacoes">Movimentações</button>
     </nav>
-    <div class="sidebar-footer">
-        <span id="'clock">--:--</span>
-        <small>node.js + mysql + mvc</small>
 
+    <div class="sidebar-footer">
+        <span id="clock">--:--</span>
+        <small>Node.js + mysql + MVC</small>
     </div>
-<main class=""content">
-<header class=""topbar">
-    <div>
-        <p class="eyebrow">sistema de garagem</p>
-        <h1>clientes, veiculos, vagas e Movimentações</h1>
-    </div>
-<button id="btnatualizar" class="btn secondary" type="button">atualizar dados</button>
-</header>
-</main>
+
+    <main class="content">
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Sistema de Garagem</p>
+                <h1>Clientes, Veículos, vagas e movimentações</h1>
+            </div>
+            <button id="btnAtualizar" class="btn secondary" type="button">Atualizar dados</button>
+        </header>
+
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+        <section id="dashboard" class="pahe-section active">
+            <div class="card-grid">
+                <article class="stat-card">
+                    <span>Clientes</span>
+                    <strong id="cardClientes">0</strong>
+                    <small>Pessoas cadatradas</small>
+                </article>
+                 <article class="stat-card">
+                    <span>Veículos</span>
+                    <strong id="cardVeiculos">0</strong>
+                    <small>Placas cadatradas</small>
+                </article>
+                 </article>
+                 <article class="stat-card">
+                    <span>Vagas livres</span>
+                    <strong id="cardVagasLivres">0</strong>
+                    <small>disponiveis agora</small>
+                </article>
+                 </article>
+                 <article class="stat-card highlight">
+                    <span></span>
+                    <strong id="cardVeiculos">0</strong>
+                    <small>Veículos cadatradas</small>
+                </article>
+
+            </div>
+        </section>
+    </main>
 
     </aside>
     </div>
